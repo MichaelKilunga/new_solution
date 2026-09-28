@@ -22,8 +22,8 @@ class EprCommandHandler
      */
     public function handle(string $senderPhone, string $rawBody): array
     {
-        // Strip out 'EPR' keyword if present at the beginning
-        $cleanBody = trim(preg_replace('/^EPR\s+/i', '', trim($rawBody)));
+        // Strip out 'HURU' or 'EPR' keyword if present at the beginning
+        $cleanBody = trim(preg_replace('/^(HURU|EPR)\s+/i', '', trim($rawBody)));
         $lang = $this->languageDetector->detect($cleanBody);
 
         $parts = preg_split('/\s+/', $cleanBody);

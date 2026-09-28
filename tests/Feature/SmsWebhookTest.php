@@ -17,7 +17,7 @@ class SmsWebhookTest extends TestCase
 
         $response = $this->postJson('/api/sms/inbound', [
             'from' => '255712345678',
-            'text' => 'EPR RECYCLER Temeke PET',
+            'text' => 'HURU RECYCLER Temeke PET',
             'id' => 'ATXid_12345',
         ]);
 
@@ -28,7 +28,7 @@ class SmsWebhookTest extends TestCase
             ]);
 
         Queue::assertPushed(ProcessEprSms::class, function ($job) {
-            return $job->from === '255712345678' && $job->text === 'EPR RECYCLER Temeke PET';
+            return $job->from === '255712345678' && $job->text === 'HURU RECYCLER Temeke PET';
         });
     }
 

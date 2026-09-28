@@ -188,27 +188,27 @@
                                     <p class="text-xs text-slate-500 mt-3 mb-3">Simulate offline feature phone users executing Africa's Talking SMS protocols:</p>
 
                                     <div class="flex flex-wrap gap-2 mb-4">
-                                        <button onclick="setSmsInput('EPR RECYCLER Temeke PET')" class="text-[11px] bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1.5 rounded-lg border border-slate-200 font-medium transition flex items-center gap-1.5">
-                                            <i class="bi bi-search text-blue-600"></i> EPR RECYCLER Temeke PET
+                                        <button onclick="setSmsInput('HURU RECYCLER Temeke PET')" class="text-[11px] bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1.5 rounded-lg border border-slate-200 font-medium transition flex items-center gap-1.5">
+                                            <i class="bi bi-search text-blue-600"></i> HURU RECYCLER Temeke PET
                                         </button>
-                                        <button onclick="setSmsInput('EPR FEE PET clear 10 tons')" class="text-[11px] bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1.5 rounded-lg border border-slate-200 font-medium transition flex items-center gap-1.5">
-                                            <i class="bi bi-calculator text-emerald-600"></i> EPR FEE PET clear 10 tons
+                                        <button onclick="setSmsInput('HURU FEE PET clear 10 tons')" class="text-[11px] bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1.5 rounded-lg border border-slate-200 font-medium transition flex items-center gap-1.5">
+                                            <i class="bi bi-calculator text-emerald-600"></i> HURU FEE PET clear 10 tons
                                         </button>
-                                        <button onclick="setSmsInput('EPR REGULATION bottle cap seals')" class="text-[11px] bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1.5 rounded-lg border border-slate-200 font-medium transition flex items-center gap-1.5">
-                                            <i class="bi bi-shield-check text-amber-600"></i> EPR REGULATION bottle cap seals
+                                        <button onclick="setSmsInput('HURU REGULATION bottle cap seals')" class="text-[11px] bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1.5 rounded-lg border border-slate-200 font-medium transition flex items-center gap-1.5">
+                                            <i class="bi bi-shield-check text-amber-600"></i> HURU REGULATION bottle cap seals
                                         </button>
-                                        <button onclick="setSmsInput('EPR RIPOTI Ilala Daraja la Msimbazi')" class="text-[11px] bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1.5 rounded-lg border border-slate-200 font-medium transition flex items-center gap-1.5">
-                                            <i class="bi bi-exclamation-diamond text-purple-600"></i> EPR RIPOTI Ilala Msimbazi
+                                        <button onclick="setSmsInput('HURU RIPOTI Ilala Daraja la Msimbazi')" class="text-[11px] bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1.5 rounded-lg border border-slate-200 font-medium transition flex items-center gap-1.5">
+                                            <i class="bi bi-exclamation-diamond text-purple-600"></i> HURU RIPOTI Ilala Msimbazi
                                         </button>
                                     </div>
 
                                     <div id="sms-screen" class="bg-slate-50 rounded-xl p-4 font-mono text-xs text-slate-800 min-h-[170px] max-h-[230px] overflow-y-auto border border-slate-200 space-y-2">
-                                        <div class="text-slate-400">// SMS Gateway Ready (Keyword: EPR). Enter command below...</div>
+                                        <div class="text-slate-400">// SMS Gateway Ready (Keyword: HURU). Enter command below...</div>
                                     </div>
                                 </div>
 
                                 <form onsubmit="sendSimulatedSms(event)" class="flex gap-2 pt-2">
-                                    <input type="text" id="sms-input" placeholder="e.g. EPR RECYCLER Temeke PET" class="flex-1 bg-white border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-600 font-mono">
+                                    <input type="text" id="sms-input" placeholder="e.g. HURU RECYCLER Temeke PET" class="flex-1 bg-white border border-slate-300 rounded-xl px-4 py-2.5 text-xs text-slate-900 placeholder-slate-400 focus:outline-none focus:border-emerald-600 font-mono">
                                     <button type="submit" id="btn-send-sms" class="bg-emerald-700 hover:bg-emerald-600 text-white font-bold text-xs px-5 py-2.5 rounded-xl transition shadow flex items-center gap-2">
                                         <i class="bi bi-send-fill"></i> Send SMS
                                     </button>
@@ -531,7 +531,7 @@
         <footer class="bg-white text-slate-600 text-xs py-6 border-t border-slate-200 mt-auto shadow-inner">
             <div class="max-w-7xl mx-auto px-4 text-center space-y-2">
                 <p>EcoHuru Extended Producer Responsibility (EPR) Platform &copy; 2026. Aligned with Tanzania 2025–2030 National Waste Management Strategy.</p>
-                <p class="text-slate-500">Shortcode: <strong class="text-emerald-700 font-mono">15054</strong> | Keyword: <strong class="text-emerald-700 font-mono">EPR</strong> | National Environmental Management Council (NEMC)</p>
+                <p class="text-slate-500">Shortcode: <strong class="text-emerald-700 font-mono">15054</strong> | Keyword: <strong class="text-emerald-700 font-mono">HURU</strong> | National Environmental Management Council (NEMC)</p>
             </div>
         </footer>
     </div>
