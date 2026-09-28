@@ -13,8 +13,8 @@ class GeminiService
 
     public function __construct()
     {
-        $this->apiKey = config('services.gemini.key', env('GEMINI_API_KEY', ''));
-        $this->model = config('services.gemini.model', env('GEMINI_MODEL', 'gemini-2.5-flash'));
+        $this->apiKey = (string) (config('services.gemini.key') ?? env('GEMINI_API_KEY') ?? '');
+        $this->model = (string) (config('services.gemini.model') ?? env('GEMINI_MODEL') ?? 'gemini-2.5-flash');
     }
 
     /**

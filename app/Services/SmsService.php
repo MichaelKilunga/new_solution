@@ -13,14 +13,11 @@ class SmsService
 
     protected string $shortcode;
 
-    protected string $environment;
-
     public function __construct()
     {
-        $this->username = env('AT_USERNAME', 'sandbox');
-        $this->apiKey = env('AT_API_KEY', '');
-        $this->shortcode = env('AT_SHORTCODE', '15054');
-        $this->environment = env('AT_ENV', 'sandbox');
+        $this->username = (string) (config('services.africastalking.username') ?? env('AT_USERNAME') ?? 'sandbox');
+        $this->apiKey = (string) (config('services.africastalking.key') ?? env('AT_API_KEY') ?? '');
+        $this->shortcode = (string) (config('services.africastalking.from') ?? env('AT_FROM') ?? env('AT_SHORTCODE') ?? '15054');
     }
 
     /**

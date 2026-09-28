@@ -8,9 +8,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | This file is for storing the credentials for third party services such
-    | as Resend, Postmark, AWS, and more. This file provides the de facto
-    | location for this type of information, allowing packages to have
-    | a conventional file to locate the various service credentials.
+    | as Resend, Postmark, AWS, Gemini, Africa's Talking and more.
     |
     */
 
@@ -33,6 +31,17 @@ return [
             'bot_user_oauth_token' => env('SLACK_BOT_USER_OAUTH_TOKEN'),
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
+    ],
+
+    'gemini' => [
+        'key' => env('GEMINI_API_KEY'),
+        'model' => env('GEMINI_MODEL', 'gemini-2.5-flash'),
+    ],
+
+    'africastalking' => [
+        'username' => env('AT_USERNAME', 'sandbox'),
+        'key' => env('AT_API_KEY'),
+        'from' => env('AT_FROM', env('AT_SHORTCODE', '15054')),
     ],
 
 ];
