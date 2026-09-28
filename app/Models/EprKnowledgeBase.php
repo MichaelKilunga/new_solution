@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class EprKnowledgeBase extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'title',
+        'category',
+        'content',
+        'keywords',
+        'language',
+        'is_active',
+    ];
+
+    protected $casts = [
+        'is_active' => 'boolean',
+    ];
+}
